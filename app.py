@@ -19,7 +19,7 @@ st.set_page_config(
     initial_sidebar_state="expanded",
     menu_items={
         'Get Help': 'https://github.com/SRAVAN-DSAI/Audio-Classifier',
-        'Report a Bug': 'sravankodari4@gmail.com',
+        'Report a Bug': 'mailto:sravankodari4@gmail.com',
         'About': 'UrbanSound8K Audio Classifier by Kodari Sravan'
     }
 )
