@@ -11,4 +11,5 @@ dependencies:
     - streamlit
     - matplotlib
     - librosa
+    - plotly
     - azureml-defaults
