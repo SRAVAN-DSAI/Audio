@@ -18,9 +18,9 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
     menu_items={
-        'Get Help': 'https://github.com/yourusername/urban8k-streamlit',
-        'Report a Bug': 'mailto:your.email@example.com',
-        'About': 'UrbanSound8K Audio Classifier by YourName'
+        'Get Help': 'https://github.com/SRAVAN-DSAI/Audio-Classifier',
+        'Report a Bug': 'sravankodari4@gmail.com',
+        'About': 'UrbanSound8K Audio Classifier by Kodari Sravan'
     }
 )
 
@@ -98,8 +98,8 @@ st.markdown("""
             <span style='color:var(--text-color); opacity:0.7;'>by YourName</span>
         </div>
         <div>
-            <a href='https://github.com/yourusername/urban8k-streamlit' target='_blank' style='margin-right:1.5rem;'>GitHub</a>
-            <a href='https://www.linkedin.com/in/yourprofile' target='_blank'>LinkedIn</a>
+            <a href='https://github.com/SRAVAN-DSAI/Audio-Classifier' target='_blank' style='margin-right:1.5rem;'>GitHub</a>
+            <a href='https://www.linkedin.com/in/sravan-kodari' target='_blank'>LinkedIn</a>
         </div>
     </div>
 """, unsafe_allow_html=True)
@@ -284,8 +284,8 @@ with tab3:
     st.header("👋 About the Creator")
     st.markdown("""
     This app was built by **YourName**.
-    - **Connect:** [GitHub](https://github.com/yourusername/urban8k-streamlit) | [LinkedIn](https://www.linkedin.com/in/yourprofile)
-    - **Contact:** your.email@example.com
+    - **Connect:** [GitHub](https://github.com/SRAVAN-DSAI/Audio-Classifier) | [LinkedIn](https://www.linkedin.com/in/sravan-kodari)
+    - **Contact:** sravankodari4@gmail.com
 
     <small>_Last updated: July 2025_</small>
     """, unsafe_allow_html=True)
