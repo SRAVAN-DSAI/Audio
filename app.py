@@ -1,14 +1,18 @@
-import streamlit as st
 import torch
 import torch.nn as nn
-from torchvision import transforms
+from torchvision import models, transforms
 from PIL import Image
 import os
+import streamlit as st
 
-# Load model
-model = torch.load('model.pth', map_location=torch.device('cpu'))
-model.eval()
+# Define model architecture
+model = models.resnet18(pretrained=False)  # Load without pretrained weights
+model.fc = nn.Linear(model.fc.in_features, 10)  # Match your 10 classes
 device = torch.device('cpu')
+
+# Load state dictionary
+model.load_state_dict(torch.load('model.pth', map_location=device))
+model.eval()  # Set to evaluation mode
 
 # Define transformation
 data_transform = transforms.Compose([
@@ -27,17 +31,14 @@ st.title("UrbanSound8K Classifier")
 uploaded_file = st.file_uploader("Choose a spectrogram image...", type="png")
 
 if uploaded_file is not None:
-    # Load and preprocess image
     image = Image.open(uploaded_file).convert('RGB')
     input_tensor = data_transform(image).unsqueeze(0).to(device)
 
-    # Predict
     with torch.no_grad():
         output = model(input_tensor)
         _, predicted = torch.max(output, 1)
         confidence = torch.softmax(output, dim=1)[0][predicted].item()
 
-    # Display result
     st.image(uploaded_file, caption="Uploaded Spectrogram", use_column_width=True)
     st.write(f"Prediction: {class_names[predicted.item()]}")
     st.write(f"Confidence: {confidence:.4f}")
