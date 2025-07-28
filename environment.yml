@@ -1,0 +1,11 @@
+name: urban8k_env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8
+  - pytorch
+  - torchvision
+  - pillow
+  - pip
+  - pip:
+    - azureml-defaults
