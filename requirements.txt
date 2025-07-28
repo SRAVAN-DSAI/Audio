@@ -1,4 +1,4 @@
-torch==2.0.1
-torchvision==0.15.2
+torch==1.13.0  # Lighter version for compatibility
+torchvision==0.14.0
 pillow
 streamlit
