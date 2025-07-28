@@ -179,7 +179,7 @@ with tab1:
     st.markdown("Upload a `.wav` file to classify the urban sound.")
     uploaded_file = st.file_uploader(
         "Upload Audio File", type=["wav"],
-        key=f"file_uploader_{st.session_state.uploader_key_counter}"
+        key=f"single_file_uploader_{st.session_state.uploader_key_counter}"
     )
 
     if uploaded_file is not None:
@@ -215,7 +215,7 @@ with tab2:
     st.markdown("Upload a `.zip` file containing multiple `.wav` files.")
     uploaded_zip = st.file_uploader(
         "Upload Zip File", type=["zip"],
-        key=f"file_uploader_{st.session_state.uploader_key_counter}"
+        key=f"batch_file_uploader_{st.session_state.uploader_key_counter}"
     )
 
     if uploaded_zip is not None:
