@@ -1,4 +1,4 @@
-torch
-torchvision
+torch==2.1.0  # Specify a version to avoid conflicts
+torchvision==0.15.0
 pillow
 streamlit
