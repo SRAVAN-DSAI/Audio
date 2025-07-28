@@ -13,12 +13,12 @@ import os
 
 # --- Streamlit App Configuration ---
 st.set_page_config(
-    page_title="UrbanSound8K Audio Classifier | YourName",
+    page_title="UrbanSound8K Audio Classifier | Kodari Sravan",
     page_icon="🎵",
     layout="wide",
     initial_sidebar_state="expanded",
     menu_items={
-        'Get Help': 'https://github.com/SRAVAN-DSAI/Audio-Classifier',
+        'Get Help': 'https://github.com/SRAVAN-DSAI/Sound-Classifier',
         'Report a Bug': 'mailto:sravankodari4@gmail.com',
         'About': 'UrbanSound8K Audio Classifier by Kodari Sravan'
     }
@@ -98,7 +98,7 @@ st.markdown("""
             <span style='color:var(--text-color); opacity:0.7;'>by YourName</span>
         </div>
         <div>
-            <a href='https://github.com/SRAVAN-DSAI/Audio-Classifier' target='_blank' style='margin-right:1.5rem;'>GitHub</a>
+            <a href='https://github.com/SRAVAN-DSAI/Sound-Classifier' target='_blank' style='margin-right:1.5rem;'>GitHub</a>
             <a href='https://www.linkedin.com/in/sravan-kodari' target='_blank'>LinkedIn</a>
         </div>
     </div>
@@ -284,7 +284,7 @@ with tab3:
     st.header("👋 About the Creator")
     st.markdown("""
     This app was built by **YourName**.
-    - **Connect:** [GitHub](https://github.com/SRAVAN-DSAI/Audio-Classifier) | [LinkedIn](https://www.linkedin.com/in/sravan-kodari)
+    - **Connect:** [GitHub](https://github.com/SRAVAN-DSAI/Sound-Classifier) | [LinkedIn](https://www.linkedin.com/in/sravan-kodari)
     - **Contact:** sravankodari4@gmail.com
 
     <small>_Last updated: July 2025_</small>
