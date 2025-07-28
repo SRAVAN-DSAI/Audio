@@ -13,14 +13,14 @@ import os
 
 # --- Streamlit App Configuration ---
 st.set_page_config(
-    page_title="UrbanSound8K Audio Classifier | YourName",
+    page_title="UrbanSound8K Audio Classifier | Sravan Kodari",
     page_icon="🎵",
     layout="wide",
     initial_sidebar_state="expanded",
     menu_items={
         'Get Help': 'https://github.com/SRAVAN-DSAI/Sound-Classifier',
         'Report a Bug': 'mailto:sravankodari4@gmail.com',
-        'About': 'UrbanSound8K Audio Classifier by Kodari Sravan'
+        'About': 'UrbanSound8K Audio Classifier by Sravan Kodari'
     }
 )
 
