@@ -3,3 +3,4 @@ torchvision==0.14.0
 pillow
 streamlit
 librosa
+matplotlib
