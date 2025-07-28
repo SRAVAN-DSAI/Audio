@@ -9,5 +9,6 @@ dependencies:
   - pip
   - pip:
     - streamlit
+    - matplotlib
     - librosa
     - azureml-defaults
